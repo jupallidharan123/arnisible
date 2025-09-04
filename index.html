@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search-box {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      width: 250px;
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #2d98da;
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3867d6;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/yourformid" method="POST" class="search-box">
+    <input type="text" name="search" placeholder="Search anything..." required>
+    <button type="submit">Search</button>
+  </form>
+</body>
+</html>
